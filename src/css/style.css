@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+}
+
+.figure-caption {
+  font-family: "Merriweather", serif;
+  color: #d6a4a3;
+  margin-left: 5px;
+}
+
+.carousel-inner h1 {
+  font-family: "Merriweather", serif;
+}
+
+.carousel-inner p {
+  font-size: 18px;
+}
+
+.btn {
+  color: #d6a4a3;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.disponivel-text {
+  font-family: "Merriweather", serif;
+  color: #d6a4a3;
+  margin: 5rem;
+}
+
+.about-text {
+  font-family: "Merriweather", serif;
+  color: #d6a4a3;
+  margin: 5rem;
+}
+
+/* FOOTER */
+footer p {
+  text-align: center;
+  background-color: #ffffff;
+  color: #29306e;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 16px;
+}
