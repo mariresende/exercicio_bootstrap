@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="UTF-8" />
+
+    <!-- Metatag Responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    <!-- Fontes -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- PopUp -->
+    <title>Open Bootstrap Modal on Page Load</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#myModal").modal("show");
+      });
+    </script>
+    <!-- /PopUp -->
+
+    <title>Brechó TRAÇA</title>
+  </head>
+
+  <body>
+    <!-- PopUp -->
+      <div id="myModal" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="card bg-white text-white m-3">
+                      <img class="card-img" src="/src/img/car-04.jpg" alt="imagem pop up">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">correio da traça</h5>
+                        <p class="card-text">inscreva-se para receber descontos e novidades. (=</p>
+                      </div>
+                    </div>
+
+                      <form>
+                          <div class="form-group m-3">
+                              <input type="text" class="form-control" placeholder="Nome">
+                          </div>
+                          <div class="form-group m-3">
+                              <input type="email" class="form-control" placeholder="Email">
+                          </div>
+                          <button type="submit" class="btn btn-outline-secondary m-3 ">Enviar</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- /PopUp -->
+
+    <!-- Navbas Header -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-light navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="/src/img/logo-traca.png" width="150" alt="logo da marca"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >novidades <span class="sr-only">(Página atual)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              shop
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#disponivel">todos</a>
+              <a class="dropdown-item" href="#disponivel">parte de cima</a>
+              <a class="dropdown-item" href="#disponivel">parte de baixo</a>
+              <a class="dropdown-item" href="#disponivel">acessórios</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="src/img/car-01.jpg"
+            alt="Primeiro Slide"
+          />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h1>acessórios</h1>
+            <p>
+              garimpamos brincos, colares, anéis, cintos, bolsas, sapatos,
+              chapéus e o que mais aparecer.
+            </p>
+            <p>
+              <a href="#disponivel" class="btn rounded-0 font-weight-bold"
+                >saiba mais</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="src/img/car-03.jpg"
+            alt="Segundo Slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>nossas peças</h1>
+            <p>
+              blusas, camisas, vestidos, macacões, saias, short, calças.
+            </p>
+            <p>
+              <a href="#disponivel" class="btn rounded-0 font-weight-bold"
+                >saiba mais</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="src/img/car-04.jpg"
+            alt="Terceiro Slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>quem somos</h1>
+            <p>
+              curadoria cuidadosa resgatando memórias. por uma moda mais leve,
+              divertida e consciente
+            </p>
+            <p>
+              <a href="#disponivel" class="btn rounded-0 font-weight-bold"
+                >saiba mais</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+    <!-- /Carousel -->
+
+    <!-- Disponíveis -->
+    <section id="disponivel" class="disponivel">
+      <div class="container">
+        <blockquote class="blockquote text-center">
+          <div class="disponivel-text" id="roupasdisponiveis">
+            <h1>disponíveis para garimpo</h1>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+    <!-- /Disponíveis -->
+
+    <!-- Cards -->
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://www.instagram.com/p/B2At453FJBs/" target="blank">
+          <img src="/src/img/produto9.JPG" class="w-100" alt="Image" />
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Vestido midi | 38 | R$50
+          </p>
+          <p>Bolsa étnica | R$120</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-light">adicione à sacola</button>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.instagram.com/p/B1-BryUlYNX/" target="blank">
+          <img src="/src/img/produto8.JPG" class="w-100" alt="Image" />
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Vestido midi | 38 | R$50
+          </p>
+          <p>Bolsa étnica | R$120</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-light">adicione à sacola</button>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://www.instagram.com/p/B17hZHQlWoo/" target="blank">
+          <img src="/src/img/produto7.JPG" class="w-100" alt="Image" />
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Vestido midi | 38 | R$50
+          </p>
+          <p>Bolsa étnica | R$120</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-light">adicione à sacola</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Cards -->
+
+    <!-- Sobre Nós -->
+    <section id="about" class="about">
+      <div class="container">
+        <blockquote class="blockquote text-center">
+          <div class="about-text" id="about-text">
+            <h1>sobre nós</h1>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+    <!-- /Sobre Nós -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <footer>
+    <p>desenvolvido com ♡ por Mari Resende</p>
+  </footer>
+</html>
